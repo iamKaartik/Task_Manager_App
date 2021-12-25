@@ -1,0 +1,21 @@
+@index.php
+->this is the home page of my app.(@adds.php ; @updates.php; @deletes.php)
+
+@manage.php
+->this page helps in displaying the database's data to you.
+->here you can also update your stuffs,etc.(@add.php ; @update.php ; @delete.php)
+
+@database connection
+
+table "tbl_list"
+->list_id(primary,AI,unsigned)
+->name(varchar,50 length)
+->desciption(varchar,null)
+
+table "tbl_tasks"
+->list_id(primary key,AI,unsigned)
+->task_name(varchar,100 length)
+->task_description(text)
+->list_id(int)
+->priority(varchar, 10 length)
+->deadline(date)
